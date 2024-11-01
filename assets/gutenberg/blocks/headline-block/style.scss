@@ -1,0 +1,226 @@
+@import '../../../public/styles/variables';
+
+$article-height: 420px;
+$article-optimal-height: 595px;
+$article-height-full: 100vh;
+$article-height-fluid: 30vw;
+$editor-margins: 32px;
+$headline-margins: 7px;
+
+%block-structure {
+  float: left;
+  width: 100%;
+  z-index: 101;
+}
+
+.headline-wrapper {
+  .dip-article-block {
+    height: $article-height;
+    min-width: unset;
+    overflow: hidden;
+
+    .article-block-media {
+      height: 100%;
+    }
+  }
+
+  // FO
+  &:not(.edit-mode) {
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    .dip-article-block {
+      @extend %block-structure;
+
+      margin-bottom: $headline-margins;
+
+      &:nth-child(1) {
+        height: $article-height;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+        height: ($article-height / 2) - ($headline-margins / 2);
+      }
+    }
+
+    // Full screen height
+    &.headline-full {
+      .dip-article-block {
+        &:nth-child(1) {
+          height: calc(#{$article-height-full} - 50px);
+        }
+
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+          height: calc((#{$article-height-full} / 2) - (#{$headline-margins} / 2));
+        }
+      }
+    }
+  }
+
+  // BO
+  &.edit-mode {
+    height: auto;
+
+    &.headline-full .wp-block:nth-child(1) .dip-article-block {
+      height: $article-height-full;
+    }
+
+    &:not(.blocks-1) {
+      .wp-block {
+        @extend %block-structure;
+      }
+
+      &.blocks-3 .wp-block,
+      &.blocks-4 .wp-block {
+        &:nth-child(2) .dip-article-block,
+        &:nth-child(3) .dip-article-block,
+        &:nth-child(4) .dip-article-block {
+          height: ($article-height / 2) - $editor-margins;
+        }
+      }
+
+      &.headline-full {
+        &.blocks-3 .wp-block,
+        &.blocks-4 .wp-block {
+          &:nth-child(2) .dip-article-block,
+          &:nth-child(3) .dip-article-block,
+          &:nth-child(4) .dip-article-block {
+            height: calc((#{$article-height-full} / 2) - #{$editor-margins});
+          }
+        }
+      }
+
+      &.blocks-3 .wp-block:nth-child(3) {
+        width: 35%;
+      }
+
+      &.blocks-4 .wp-block:nth-child(3),
+      &.blocks-4 .wp-block:nth-child(4) {
+        width: 17.5%;
+      }
+    }
+  }
+}
+
+// Tablet
+@media (min-width: #{$tablet-breakpoint}) {
+  %block-structure {
+    width: 100%;
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      width: 50%;
+    }
+  }
+
+  // FO
+  .headline-wrapper:not(.edit-mode) {
+    &.blocks-3 .dip-article-block {
+      width: 100%;
+    }
+
+    &.blocks-4 .dip-article-block {
+      &:nth-child(3) {
+        padding-right: $headline-margins / 2;
+      }
+
+      &:nth-child(4) {
+        padding-left: $headline-margins / 2;
+      }
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        .article-block-content {
+          width: calc(100% - (#{$headline-margins} / 2));
+        }
+      }
+    }
+  }
+}
+
+// Desktop
+@media (min-width: #{$desktop-breakpoint}) {
+  %block-structure {
+    &:nth-child(1) {
+      width: 65%;
+    }
+
+    &:nth-child(2) {
+      width: 35%;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      width: 17.5%;
+    }
+  }
+
+  // FO
+  .headline-wrapper:not(.edit-mode) {
+    .dip-article-block {
+      &:nth-child(1) {
+        padding-right: $headline-margins / 2;
+      }
+
+      &:nth-child(2),
+      &:nth-child(3) {
+        padding-left: $headline-margins / 2;
+      }
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+        .article-block-content {
+          width: calc(100% - (#{$headline-margins} / 2));
+        }
+      }
+    }
+
+    &.blocks-1 {
+      .dip-article-block {
+        height: $article-optimal-height;
+        padding: 0;
+        width: 100%;
+
+        .article-block-content {
+          width: 100%;
+        }
+      }
+    }
+
+    &.blocks-2 .dip-article-block {
+      height: $article-height;
+    }
+
+    &.blocks-3 .dip-article-block:nth-child(3) {
+      width: 35%;
+    }
+
+    &.blocks-4 .dip-article-block:nth-child(3) .article-block-content {
+      width: calc(100% - #{$headline-margins});
+    }
+
+    // Full screen width (keep image aspect ratio to 30%)
+    &.alignfull:not(.headline-full) {
+      .dip-article-block {
+        height: $article-height-fluid;
+      }
+
+      &.blocks-4,
+      &.blocks-3 {
+        .dip-article-block {
+          &:nth-child(2),
+          &:nth-child(3),
+          &:nth-child(4) {
+            height: calc((#{$article-height-fluid} / 2) - (#{$headline-margins} / 2));
+          }
+        }
+      }
+    }
+  }
+}

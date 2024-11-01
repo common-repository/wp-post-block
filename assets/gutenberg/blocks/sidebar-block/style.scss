@@ -1,0 +1,53 @@
+$one-column-width: 30%;
+$two-column-width: 60%;
+$three-column-width: 100%;
+$block-class: 'sidebar-block-wrapper';
+
+@import '../container-blocks';
+
+.sidebar-block-wrapper {
+  display: flex;
+
+  .sidebar-block-free {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 75%;
+
+    // Editor fixes
+    & > .block-editor-inner-blocks.block-editor-inner-blocks {
+      flex-basis: 100%;
+    }
+
+    .sidebar-block-free-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    // Frontend Only
+    .dip-article-block {
+      flex: 0 0 $one-column-width;
+      margin-bottom: 30px;
+
+      &.is-style-image-highlight {
+        flex-basis: $two-column-width;
+      }
+
+      &.is-style-text-highlight {
+        flex-basis: $three-column-width;
+      }
+    }
+  }
+
+  .sidebar-block-ssr {
+    flex-basis: 25%;
+  }
+}
+
+// Editor styles
+body.wp-admin .sidebar-block-wrapper {
+  .sidebar-block-free,
+  .sidebar-block-ssr {
+    padding: 30px;
+  }
+}

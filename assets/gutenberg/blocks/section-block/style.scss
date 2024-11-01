@@ -1,0 +1,19 @@
+$one-column-width: 25%;
+$two-column-width: 50%;
+$three-column-width: 75%;
+$block-class: 'section-block-container';
+
+@import '../container-blocks';
+
+.#{$block-class} {
+  h2 {
+    flex-basis: 100%;
+    flex-shrink: 0;
+  }
+}
+
+body:not(.wp-admin) .#{$block-class} {
+  h2 {
+    padding: 0 15px;
+  }
+}

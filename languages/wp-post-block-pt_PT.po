@@ -1,0 +1,248 @@
+# Copyright (C) 2019 Dipcode
+# This file is distributed under the same license as the Loja TIN plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Post Block\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/tin-store\n"
+"POT-Creation-Date: 2019-07-25 17:10+0100\n"
+"PO-Revision-Date: 2019-07-25 17:12+0100\n"
+"Last-Translator: Tiago Brito <tiago.brito@dipcode.com>\n"
+"Language-Team: \n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Domain: tin-store\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: __;_e;_n\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --no-location\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: vendor\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
+
+msgid "Drag an article here"
+msgstr "Arraste um artigo para aqui"
+
+msgid "Article Settings"
+msgstr "Configurações do artigo"
+
+msgid "Show related articles"
+msgstr "Mostrar artigos relacionados"
+
+msgid "Show article section"
+msgstr "Mostrar secção do artigo"
+
+msgid "Show author"
+msgstr "Mostrar autor"
+
+msgid "Show author photo"
+msgstr "Mostrar foto do autor"
+
+msgid "Show lead"
+msgstr "Mostrar excerto"
+
+msgid "Show status"
+msgstr "Mostrar estado"
+
+msgid "Image shadow"
+msgstr "Imagem com sombra"
+
+msgid "Text shadow"
+msgstr "Texto com sombra"
+
+msgid "Background color"
+msgstr "Cor de fundo"
+
+msgid "Select or drag an article here"
+msgstr "Escolha ou arraste um artigo aqui"
+
+msgid "Post Block"
+msgstr "Bloco de Artigo"
+
+msgid "Post Block description"
+msgstr "Descrição do bloco de Artigo"
+
+msgid "text"
+msgstr "texto"
+
+msgid "Normal"
+msgstr "Normal"
+
+msgid "Vertical image"
+msgstr "Imagem Vertical"
+
+msgid "Image highlight"
+msgstr "Destaque de imagem"
+
+msgid "Text highlight"
+msgstr "Destaque de texto"
+
+msgid "Edit image"
+msgstr "Editar imagem"
+
+msgid "Shortcuts"
+msgstr "Ligações rápidas"
+
+msgid "Edit post"
+msgstr "Editar artigo"
+
+msgid "Change article"
+msgstr "Alterar artigo"
+
+msgid "Headline Settings"
+msgstr "Configurações do destaque"
+
+msgid "Full screen"
+msgstr "Ecra inteiro"
+
+#, fuzzy
+#| msgid "If enabled block will use the whole viewport."
+msgid "If enabled block will use the whole viewport"
+msgstr "Se ativado o bloco irá ocupar todo o ecrã"
+
+msgid "Headline block"
+msgstr "Destaque"
+
+msgid "Block that represents a headline"
+msgstr "Bloco que representa a manchete"
+
+msgid "Block Settings"
+msgstr "Configurações do bloco"
+
+msgid "Block title"
+msgstr "Título do Bloco"
+
+msgid "Multimedia"
+msgstr "Multimedia"
+
+msgid "Multimedia block"
+msgstr "Bloco multimédia"
+
+msgid "Block that represents a multimedia section"
+msgstr "Bloco que representa a secção de multimédia"
+
+msgid "Section title"
+msgstr "Título da secção"
+
+msgid "Section Settings"
+msgstr "Configurações da secção"
+
+msgid "The headline of the section"
+msgstr "O título da secção"
+
+msgid "Section Block"
+msgstr "Bloco de secção"
+
+msgid "A container for other blocks."
+msgstr "Uma caixa para outros blocos."
+
+msgid "Sidebar content"
+msgstr "Conteúdo com barra lateral"
+
+msgid "Insert content side-by-side with a specific sidebar"
+msgstr "Permite inserir blocos contidos a uma barra lateral"
+
+msgid "All categories"
+msgstr "Todas as categorias"
+
+msgid "Search posts"
+msgstr "Pesquisar artigos"
+
+msgid "Category"
+msgstr "Categoria"
+
+msgid "Loading"
+msgstr "A carregar"
+
+msgid "No posts matched the selected criteria"
+msgstr "Não foram encontrados artigos com estes critérios de pesquisa"
+
+msgid "Digital Media Blocks"
+msgstr "Blocos Editoriais"
+
+#~ msgid "Article Block"
+#~ msgstr "Bloco de artigo"
+
+#~ msgid "Content with sidebar"
+#~ msgstr "Conteúdo"
+
+#~ msgid "Showing large initial letter."
+#~ msgstr "A Mostrar a primeira letra grande."
+
+#~ msgid "Toggle to show a large initial letter."
+#~ msgstr "Ative para mostrar a primeira letra grande."
+
+#~ msgid "Text Settings"
+#~ msgstr "Configurações de texto"
+
+#~ msgid "Color Settings"
+#~ msgstr "Configurações de cor"
+
+#~ msgid "Background Color"
+#~ msgstr "Cor de fundo"
+
+#~ msgid "Text Color"
+#~ msgstr "Cor de texto"
+
+#~ msgid "Paragraph block"
+#~ msgstr "Bloco de paragráfo"
+
+#~ msgid "Empty block; start writing or type forward slash to choose a block"
+#~ msgstr "Bloco vazio; Comece a escrever ou escreva / para escolher um bloco"
+
+#~ msgid "Start writing or type / to choose a block"
+#~ msgstr "Comece a escrever ou escreva / para escolher um bloco"
+
+#~ msgid "Start with the building block of all narrative."
+#~ msgstr "Comece com a construção do bloco."
+
+#~ msgid "News article selector"
+#~ msgstr "Navegador de artigos"
+
+#~ msgid "Searching"
+#~ msgstr "A procurar..."
+
+#~ msgid "Video"
+#~ msgstr "Vídeo"
+
+#~ msgid "Gallery"
+#~ msgstr "Galeria"
+
+#~ msgid "Podcast"
+#~ msgstr "Podcast"
+
+#~ msgid "Infographic"
+#~ msgstr "Infografia"
+
+#~ msgid "Grid Item"
+#~ msgstr "Item da grelha"
+
+#~ msgid "A structural item."
+#~ msgstr "Um item estrutural"
+
+#~ msgid "Number of articles"
+#~ msgstr "Número de artigos"
+
+#~ msgid "One"
+#~ msgstr "Um"
+
+#~ msgid "Two"
+#~ msgstr "Dois"
+
+#~ msgid "Three"
+#~ msgstr "Três"
+
+#~ msgid "Four"
+#~ msgstr "Quatro"
+
+#~ msgid "Post fields configuration"
+#~ msgstr "Configurações dos campos do artigo"
+
+#~ msgid "Post name"
+#~ msgstr "Nome do artigo"
+
+#~ msgid "Help text"
+#~ msgstr "Texto de ajuda"

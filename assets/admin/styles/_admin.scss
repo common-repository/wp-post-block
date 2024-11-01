@@ -1,0 +1,22 @@
+.drag-wrapper {
+  align-items: center;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 30px 10px;
+  text-align: center;
+}
+
+.wp-block {
+  max-width: none;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.block-editor-block-preview {
+  .block-editor-block-preview__content {
+    zoom: 0.5;
+  }
+}
